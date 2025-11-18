@@ -1,0 +1,117 @@
+/* Configurações Globais */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f8f8f8; /* Branco Suave */
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 10px 0;
+}
+
+/* Cores Principais */
+/* Azul Escuro (Para fundo de cabeçalho e rodapé) */
+/* Vermelho (Para destaque e links) */
+
+/* Cabeçalho */
+header {
+    background-color: #004d99; /* Azul Escuro Principal */
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 5px;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin-top: 0;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* Menu de Navegação */
+nav {
+    background-color: #f1f1f1; /* Branco Quase Puro */
+    border-bottom: 2px solid #e30000; /* Linha Vermelha de Destaque */
+    text-align: center;
+}
+
+nav a {
+    color: #004d99; /* Azul Escuro */
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #e30000; /* Vermelho */
+    color: white;
+}
+
+/* Conteúdo Principal e Notícias */
+main h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: #e30000; /* Vermelho para Títulos de Seção */
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.noticia {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Sombra mais suave */
+    text-align: left;
+    border-left: 5px solid #004d99; /* Barra Azul Lateral */
+}
+
+.noticia img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.noticia h3 {
+    color: #333;
+}
+
+.noticia a {
+    color: #e30000; /* Vermelho para o link "Leia Mais" */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Responsividade (Para telas grandes) */
+@media (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+        gap: 20px; /* Espaço entre as colunas */
+    }
+}
+
+/* Rodapé */
+footer {
+    background-color: #004d99; /* Azul Escuro */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
