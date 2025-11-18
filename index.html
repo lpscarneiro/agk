@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AGK | Agência de Entretenimento Coreano</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,7 +19,7 @@
 
     <nav>
         <div class="container">
-            <a href="#">Home</a>
+            <a href="#" class="active">Home</a>
             <a href="#">K-Pop</a>
             <a href="#">K-Drama</a>
             <a href="#">Notícias Quentes</a>
@@ -24,28 +27,49 @@
     </nav>
 
     <main class="container">
+        <section class="hero-article">
+            <img src="https://via.placeholder.com/800x400?text=NOTÍCIA+EM+DESTAQUE" alt="Imagem Notícia de Destaque">
+            <div class="hero-content">
+                <h2>O Fenômeno Cultural que Transcende Fronteiras</h2>
+                <p class="category">⭐ Destaque da Semana</p>
+                <p>O impacto da onda Hallyu (onda coreana) na cultura pop ocidental, com análise de mercado e tendências futuras. Um olhar profundo sobre como a música, o cinema e a moda coreana se tornaram globais...</p>
+                <a href="#" class="read-more-button">Leia a Notícia Completa →</a>
+            </div>
+        </section>
+
         <h2>Últimas Notícias</h2>
         
-        <article class="noticia">
-            <img src="https://via.placeholder.com/300x200?text=Imagem+da+Notícia+1" alt="Imagem da Notícia 1">
-            <h3>Novo Álbum de Grupo X alcança Top 10 Mundial</h3>
-            <p>O grupo de K-Pop, 'Grupo X', fez um retorno explosivo nesta semana, alcançando marcas históricas nas plataformas de streaming globais...</p>
-            <a href="#">Leia Mais →</a>
-        </article>
+        <section class="grid-noticias">
+            <article class="noticia card">
+                <img src="https://via.placeholder.com/300x200?text=K-Pop" alt="Imagem da Notícia 1">
+                <div class="card-body">
+                    <p class="category">K-POP</p>
+                    <h3>Novo Álbum de Grupo X alcança Top 10 Mundial</h3>
+                    <p>O grupo 'Grupo X', fez um retorno explosivo nesta semana, alcançando marcas históricas nas plataformas de streaming globais...</p>
+                    <a href="#">Leia Mais →</a>
+                </div>
+            </article>
 
-        <article class="noticia">
-            <img src="https://via.placeholder.com/300x200?text=Imagem+da+Notícia+2" alt="Imagem da Notícia 2">
-            <h3>Atriz Y confirma papel principal em novo drama de época</h3>
-            <p>A estrela de K-Drama, Atriz Y, confirmou sua participação no aguardado drama histórico que será lançado no próximo outono...</p>
-            <a href="#">Leia Mais →</a>
-        </article>
-        
-        <article class="noticia">
-            <img src="https://via.placeholder.com/300x200?text=Imagem+da+Notícia+3" alt="Imagem da Notícia 3">
-            <h3>Tendência de Moda Coreana 'Street Style' domina passarelas</h3>
-            <p>De Seul para o mundo, a moda casual e arrojada dos idols está influenciando coleções internacionais...</p>
-            <a href="#">Leia Mais →</a>
-        </article>
+            <article class="noticia card">
+                <img src="https://via.placeholder.com/300x200?text=K-Drama" alt="Imagem da Notícia 2">
+                <div class="card-body">
+                    <p class="category">K-DRAMA</p>
+                    <h3>Atriz Y confirma papel principal em novo drama de época</h3>
+                    <p>A estrela de K-Drama, Atriz Y, confirmou sua participação no aguardado drama histórico que será lançado no próximo outono...</p>
+                    <a href="#">Leia Mais →</a>
+                </div>
+            </article>
+            
+            <article class="noticia card">
+                <img src="https://via.placeholder.com/300x200?text=Moda" alt="Imagem da Notícia 3">
+                <div class="card-body">
+                    <p class="category">MODA</p>
+                    <h3>Tendência de Moda Coreana 'Street Style' domina passarelas</h3>
+                    <p>De Seul para o mundo, a moda casual e arrojada dos idols está influenciando coleções internacionais...</p>
+                    <a href="#">Leia Mais →</a>
+                </div>
+            </article>
+        </section>
 
     </main>
 
