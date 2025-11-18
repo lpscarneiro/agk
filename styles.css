@@ -1,9 +1,10 @@
-/* Configurações Globais e Tipografia (Poppins do Google Fonts) */
+/* Configurações Globais e Tipografia (Poppins) */
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     margin: 0;
-    background-color: #f8f8f8; 
+    /* NOVO: Fundo cinza claro para que o conteúdo branco se destaque */
+    background-color: #ededed; 
     color: #333;
 }
 
@@ -16,13 +17,13 @@ body {
 
 /* Cores: Azul (#004D99), Vermelho (#E30000), Branco (#FFFFFF) */
 
-/* Cabeçalho */
+/* Cabeçalho - Mantido Azul Forte */
 header {
-    background-color: #004D99; /* Azul Escuro */
+    background-color: #004D99; 
     color: white;
     padding: 30px 0;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
 }
 
 header h1 {
@@ -39,10 +40,10 @@ header p {
     font-size: 0.9em;
 }
 
-/* Menu de Navegação */
+/* Menu de Navegação - Fundo Branco, Itens Azuis */
 nav {
     background-color: #ffffff;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 2px solid #E30000; /* Linha Vermelha Dupla */
     text-align: center;
     padding: 5px 0;
 }
@@ -62,7 +63,7 @@ nav a.active {
 }
 
 nav a:hover {
-    color: #E30000;
+    background-color: #f1f1f1; /* Fundo cinza suave no hover */
 }
 
 /* --- Notícia de Destaque (Hero Section) --- */
@@ -70,10 +71,10 @@ nav a:hover {
     margin: 30px auto;
     background: white;
     border-radius: 10px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Garante que a imagem não vaze */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Sombra mais proeminente */
+    overflow: hidden; 
     display: flex;
-    flex-direction: column; /* Padrão Mobile */
+    flex-direction: column; 
 }
 
 .hero-article img {
@@ -95,8 +96,8 @@ nav a:hover {
 
 .hero-content .category {
     color: #E30000;
-    font-weight: 600;
-    font-size: 0.85em;
+    font-weight: 700; /* Mais negrito */
+    font-size: 0.9em;
     margin-bottom: 10px;
 }
 
@@ -127,23 +128,25 @@ main h2 {
 .grid-noticias {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 25px;
     justify-content: center;
 }
 
 .card {
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    /* Card com borda sutil e sombra forte */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); 
+    border: 1px solid #ddd;
     transition: transform 0.3s, box-shadow 0.3s;
     overflow: hidden;
-    width: 100%; /* Padrão Mobile */
+    width: 100%; 
     max-width: 350px; 
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-7px); /* Move mais para cima no hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Sombra mais destacada */
 }
 
 .card img {
@@ -159,16 +162,17 @@ main h2 {
 
 .card-body .category {
     color: #E30000;
-    font-size: 0.75em;
-    font-weight: 600;
+    font-size: 0.8em;
+    font-weight: 700;
     margin-bottom: 5px;
+    text-transform: uppercase;
 }
 
 .card-body h3 {
     margin-top: 0;
     color: #333;
-    font-weight: 600;
-    font-size: 1.2em;
+    font-weight: 700;
+    font-size: 1.3em; /* Título maior */
 }
 
 .card-body a {
@@ -177,6 +181,7 @@ main h2 {
     font-weight: 600;
     display: block;
     margin-top: 10px;
+    font-size: 0.9em;
 }
 
 .card-body a:hover {
@@ -187,7 +192,7 @@ main h2 {
 @media (min-width: 768px) {
     /* Notícia de Destaque */
     .hero-article {
-        flex-direction: row; /* Imagem e Conteúdo lado a lado */
+        flex-direction: row; 
     }
     .hero-article img {
         width: 50%;
@@ -200,11 +205,11 @@ main h2 {
     /* Grid de Notícias */
     .grid-noticias {
         grid-template-columns: repeat(3, 1fr);
-        display: grid; /* Volta para o grid */
-        gap: 25px;
+        display: grid; 
+        gap: 30px;
     }
     .card {
-        width: auto; /* Deixa o grid controlar a largura */
+        width: auto; 
     }
 }
 
@@ -214,7 +219,8 @@ footer {
     background-color: #004D99; 
     color: white;
     text-align: center;
-    padding: 15px 0;
+    padding: 20px 0; /* Mais espaçamento */
     margin-top: 50px;
     font-size: 0.9em;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
